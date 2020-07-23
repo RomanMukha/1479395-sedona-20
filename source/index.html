@@ -10,27 +10,27 @@
         <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="City of Sedona">
       </a>
       <nav class="nav">
+        <button class="nav__close button-close">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
         <ul class="nav__list site-list">
-          <li class="site-list__item site-list__item--first site-list__item--active">
-            <a>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">
               Главная
             </a>
-            <button class="nav__close button-close">
-              <span class="visually-hidden">Закрыть меню</span>
-            </button>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">
+            <a class="site-list__link" href="photo.html">
               Фото и Видео
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__link" href="form.html">
               Форма отзыва
             </a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru">
+            <a class="site-list__link" href="https://htmlacademy.ru">
               HTML Academy
             </a>
           </li>
@@ -39,75 +39,67 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </nav>
-      <div class="page-header__background">
-        <img class="logo-upper" src="https://via.placeholder.com/158x52" width="158" height="52" alt="Welcome to the gorgeous">
-        <img class="logo-main" src="https://via.placeholder.com/282x49" width="282" height="49" alt="Sedona">
-        <img class="logo-description" src="https://via.placeholder.com/181x49" width="181" height="49" alt="Because the Grand Canyon sucks!">
+      <div class="header-background background-main">
+        <img class="background-main__image" src="https://via.placeholder.com/282x214" width="282" height="214" alt="Sedona">
       </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Добро пожаловать в "Седону"</h1>
       <section class="features">
         <header class="features__header">
-          <h2 class="features__h2 main-h2">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <h2 class="features__title main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="features__description main-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </header>
-        <section class="features-one">
-          <h2 class="features-one__h2 main-h2 main-h2--feature-one">Настоящий Городок</h2>
-          <p class="features-one__number features__number features__number--one">— №1 —</p>
-          <p class="features-one__description main-description main-description--feature-one">Седона не аттракцион для туристов, там течет своя жизнь</p>
-          <div class="features-one__img">
+        <section class="features-city features-primary">
+          <h3 class="features-primary__title main-title">Настоящий Городок</h3>
+          <p class="features-primary__number main-description">— №1 —</p>
+          <p class="features-primary__description main-description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <div class="features-primary__img">
             <img src="https://via.placeholder.com/520x260" width="520" height="260" alt="Настоящий Городок">
           </div>
-          <dl class="features-one__list">
-            <div class="features-one__list__item">
-              <dt class="features-one__list__element element--housing">
-                Жилье
-              </dt>
-              <dd class="features-one__list__descrition">
+          <ul class="features-city__list">
+            <li class="features-city__element housing">
+              <h4 class="housing__title main-title">Жилье</h4>
+              <p class="housing__descrition main-description">
                Рекомендуем пожить в настоящем мотеле, все как в кино!
-              </dd>
-            </div>
-            <div class="features-one__list__item">
-              <dt class="features-one__list__element element--souvenirs">
-                Сувениры
-              </dt>
-              <dd class="features-one__list__descrition">
+              </p>
+            </li>
+            <li class="features-city__list souvenirs">
+              <h4 class="souvenirs__title main-title">Сувениры</h4>
+              <p class="souvenirs__descrition main-description">
                 Не только китайского, но и местного производства!
-              </dd>
-            </div>
-            <div class="features-one__list__item">
-              <dt class="features-one__list__element element--food">
-                Еда
-              </dt>
-              <dd class="features-one__list__descrition">
+              </p>
+            </li>
+            <li class="features-city__list food">
+              <h4 class="food__title main-title">Еда</h4>
+              <p class="food__descrition main-description">
                 Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-              </dd>
-            </div>
-          </dl>
+              </p>
+            </li>
+          </ul>
         </section>
-        <section class="features-two">
-          <h2 class="features__h2 main-h2 main-h2--feature-two">Там есть мост Дьявола</h2>
-          <p class="features-two__number features__number features__number--two">— №2 —</p>
-          <p class="features-two__description main-description main-description--feature-two">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          <div class="features-two__img">
-            <img src="https://via.placeholder.com/520x260" width="520" height="260" alt="Настоящий Городок">
+        <section class="features-bridge features-primary">
+          <h3 class="features-primary__title main-title">Там есть мост Дьявола</h3>
+          <p class="features-primary__number main-description">— №2 —</p>
+          <p class="features-primary__description main-description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <div class="features-primary__img">
+            <img src="https://via.placeholder.com/520x260" width="520" height="260" alt="Мост Дьявола">
           </div>
         </section>
-        <section class="features-else">
-          <h2 class="features-else__h2 main-h2">Небольшая площадь</h2>
-          <p class="features-else__number features__number">— №3 —</p>
-          <p class="features-else__description main-description">Все интересные места находятся очень близко</p>
+        <section class="features-secondary">
+          <h3 class="features-secondary__title main-title">Небольшая площадь</h3>
+          <p class="features-secondary__number main-description">— №3 —</p>
+          <p class="features-secondary__description main-description">Все интересные места находятся очень близко</p>
         </section>
-        <section class="features-else">
-          <h2 class="features-else__h2 main-h2">Красивая дорога</h2>
-          <p class="features-else__number features__number">— №4 —</p>
-          <p class="features-else__description main-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        <section class="features-secondary">
+          <h3 class="features-secondary__title main-title">Красивая дорога</h3>
+          <p class="features-secondary__number main-description">— №4 —</p>
+          <p class="features-secondary__description main-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </section>
-        <section class="features-else features-else--last">
-          <h2 class="features-else__h2 main-h2">Мало туристов</h2>
-          <p class="features-else__number features__number features__number--else">— №5 —</p>
-          <p class="features-else__description main-description">Большинство едет в Гранд Каньон и толпится там</p>
+        <section class="features-secondary">
+          <h3 class="features-secondary__title main-title">Мало туристов</h3>
+          <p class="features-secondary__number main-description">— №5 —</p>
+          <p class="features-secondary__description main-description">Большинство едет в Гранд Каньон и толпится там</p>
         </section>
       </section>
     </main>
@@ -116,13 +108,19 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#"></a>
+            <a class="social__link social__link--twitter" href="#">
+              <span class="visually-hidden">Мы в twitter!</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Мы в facebook!</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#"></a>
+            <a class="social__link social__link--youtube" href="#">
+              <span class="visually-hidden">Мы на youtube!</span>
+            </a>
           </li>
         </ul>
       </div>

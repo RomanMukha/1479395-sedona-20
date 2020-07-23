@@ -6,18 +6,18 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="logo-nav">
+      <a class="logo-nav" href="index.html">
         <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="City of Sedona">
       </a>
       <nav class="nav">
+        <button class="nav__close button-close">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
         <ul class="nav__list site-list">
-          <li class="site-list__item site-list__item--first site-list__item--active">
+          <li class="site-list__item">
             <a href="index.html">
               Главная
             </a>
-            <button class="nav__close button-close">
-              <span class="visually-hidden">Закрыть меню</span>
-            </button>
           </li>
           <li class="site-list__item">
             <a href="photo.html">
@@ -39,10 +39,8 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </nav>
-      <div class="page-header__background">
-        <img class="logo-upper visually-hidden" src="https://via.placeholder.com/158x52" width="158" height="52" alt="Welcome to the gorgeous">
-        <img class="logo-main" src="https://via.placeholder.com/282x49" width="282" height="49" alt="Sedona">
-        <img class="logo-description visually-hidden" src="https://via.placeholder.com/181x49" width="181" height="49" alt="Because the Grand Canyon sucks!">
+      <div class="header-background background-inner">
+        <img class="background-inner__image" src="https://via.placeholder.com/282x49" width="282" height="49" alt="Sedona">
       </div>
     </header>
     <main class="page-form">
@@ -55,13 +53,19 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#"></a>
+            <a class="social__link social__link--twitter" href="#">
+              <span class="visually-hidden">Мы в twitter!</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Мы в facebook!</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#"></a>
+            <a class="social__link social__link--youtube" href="#">
+              <span class="visually-hidden">Мы на youtube!</span>
+            </a>
           </li>
         </ul>
       </div>
