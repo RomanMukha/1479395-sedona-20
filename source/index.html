@@ -1,12 +1,135 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+  <body class="page__body">
+    <header class="page-header">
+      <a class="logo-nav">
+        <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="City of Sedona">
+      </a>
+      <nav class="nav">
+        <button class="nav__close button-close">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+        <ul class="nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">
+              Фото и Видео
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+        <button class="nav__open">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </nav>
+      <div class="header-background background-main">
+        <img class="background-main__image" src="https://via.placeholder.com/282x214" width="282" height="214" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Добро пожаловать в "Седону"</h1>
+      <section class="features">
+        <header class="features__header">
+          <h2 class="features__title main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="features__description main-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </header>
+        <section class="features-city features-primary">
+          <h3 class="features-primary__title main-title">Настоящий Городок</h3>
+          <p class="features-primary__number main-description">№1</p>
+          <p class="features-primary__description main-description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <div class="features-primary__img">
+            <img src="https://via.placeholder.com/520x260" width="520" height="260" alt="Настоящий Городок">
+          </div>
+          <ul class="features-city__list">
+            <li class="features-city__element features-city__element--housing">
+              <h4 class="housing__title main-title">Жилье</h4>
+              <p class="housing__descrition main-description">
+               Рекомендуем пожить в настоящем мотеле, все как в кино!
+              </p>
+            </li>
+            <li class="features-city__element features-city__element--souvenirs">
+              <h4 class="souvenirs__title main-title">Сувениры</h4>
+              <p class="souvenirs__descrition main-description">
+                Не только китайского, но и местного производства!
+              </p>
+            </li>
+            <li class="features-city__element features-city__element--food">
+              <h4 class="food__title main-title">Еда</h4>
+              <p class="food__descrition main-description">
+                Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="features-bridge features-primary">
+          <h3 class="features-primary__title main-title">Там есть мост Дьявола</h3>
+          <p class="features-primary__number main-description">№2</p>
+          <p class="features-primary__description main-description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <div class="features-primary__img">
+            <img src="https://via.placeholder.com/520x260" width="520" height="260" alt="Мост Дьявола">
+          </div>
+        </section>
+        <section class="features-secondary">
+          <h3 class="features-secondary__title main-title">Небольшая площадь</h3>
+          <p class="features-secondary__number main-description">№3</p>
+          <p class="features-secondary__description main-description">Все интересные места находятся очень близко</p>
+        </section>
+        <section class="features-secondary">
+          <h3 class="features-secondary__title main-title">Красивая дорога</h3>
+          <p class="features-secondary__number main-description">№4</p>
+          <p class="features-secondary__description main-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </section>
+        <section class="features-secondary">
+          <h3 class="features-secondary__title main-title">Мало туристов</h3>
+          <p class="features-secondary__number main-description">№5</p>
+          <p class="features-secondary__description main-description">Большинство едет в Гранд Каньон и толпится там</p>
+        </section>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <b class="page-footer__hashtag">#visitsedona</b>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">
+              <span class="visually-hidden">Мы в twitter!</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Мы в facebook!</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">
+              <span class="visually-hidden">Мы на youtube!</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a href="https://htmlacademy.ru" class="copyright__icon">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML-Academy">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
