@@ -1,1 +1,37 @@
-// Начните писать стили здесь
+// global
+
+@import "fonts.scss";
+@import "global.scss";
+@import "variables.scss";
+@import "page.scss";
+
+@import "main-title.scss";
+@import "main-description.scss";
+@import "form-text.scss";
+
+@import "main-button.scss";
+
+// index
+
+@import "page-header.scss";
+@import "nav.scss";
+@import "site-list.scss";
+@import "logo-nav.scss";
+
+@import "features.scss";
+@import "features-primary.scss";
+@import "features-city.scss";
+@import "features-secondary.scss";
+
+@import "page-footer.scss";
+@import "copyright.scss";
+@import "social.scss";
+
+// photo
+
+@import "intro.scss";
+@import "photo-card.scss";
+
+// form
+
+@import "main-form";
