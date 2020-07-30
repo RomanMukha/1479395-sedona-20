@@ -1,8 +1,8 @@
 .features-secondary {
-  background-color: $maingrey;
   border-bottom: $secondgrey 1px solid;
+  padding: 26px 6px 24px 6px;
 }
 
 .features-secondary:last-child {
-  border-bottom: none;
+  border: none;
 }
