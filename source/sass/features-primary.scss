@@ -1,0 +1,35 @@
+.features-primary {
+  background-color: $mainblue;
+}
+
+.features-primary__wrap {
+  color: white;
+  background-color: $mainblue;
+  padding: 39px 15px 39px 15px;
+}
+
+.features-primary__list {
+  background-color: white;
+  padding: 35px 11px 35px 70px;
+  list-style: none;
+  margin: 0;
+}
+
+.features-primary__number {
+  line-height: 21px;
+  color: white;
+}
+
+.features-primary__number::before,
+.features-primary__number::after {
+  content: "—";
+}
+
+.features-primary__description {
+  line-height: 21px;
+  color: white;
+}
+
+.features-primary__img {
+  display: block;
+}

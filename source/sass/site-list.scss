@@ -1,0 +1,33 @@
+.site-list {
+  background-color: $mainblue;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.site-list__item {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  margin-bottom: 1px;
+  background-color: $mainblue;
+}
+
+.site-list__item:first-child {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+}
+
+.site-list__item:last-child {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  margin-bottom: 0;
+}
+
+.site-list__link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 40px;
+  font-size: 18px;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}

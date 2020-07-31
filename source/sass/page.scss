@@ -1,0 +1,15 @@
+.page {
+  min-width: 320px;
+  height: 100%;
+  font-size: 14px;
+  font-family: $mainfont;
+  line-height: 26px;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+}

@@ -1,0 +1,24 @@
+.photo-card {
+  border-bottom: $bordergrey 1px solid;
+  padding: 22px 20px 15px 20px;
+}
+
+.photo-card__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo-card__author {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.photo-card__likes {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  background: none;
+  border: none;
+}
