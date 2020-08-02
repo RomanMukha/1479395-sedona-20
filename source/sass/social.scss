@@ -1,3 +1,14 @@
+.social__list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
 .social__link {
-  background-color: $mainblue;
+  display: block;
+  width: 46px;
+  height: 48px;
+  background-color: $main-blue;
 }

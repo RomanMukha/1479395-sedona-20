@@ -1,10 +1,21 @@
 .main-form__block {
   border: none;
-  border-bottom: $bordergrey 1px solid;
+  border-bottom: $border-grey 1px solid;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  padding-bottom: 25px;
+
+  &--last {
+    border-bottom: none;
+  }
 }
 
-.main-form__block:last-child {
-  border-bottom: none;
+.main-form__title {
+  display: block;
+  text-align: center;
 }
 
 .main-form__label {
@@ -12,6 +23,17 @@
 }
 
 .main-form__field {
-  background-color: $thirdgrey;
+  background-color: $third-grey;
   border: none;
+}
+
+.main-form__visitor-list,
+.main-form__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-form__button {
+  width: 100%;
 }

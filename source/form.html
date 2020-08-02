@@ -3,16 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="logo-nav" href="index.html">
-        <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="City of Sedona">
-      </a>
-      <nav class="nav">
-        <button class="nav__close button-close">
-          <span class="visually-hidden">Закрыть меню</span>
+      <nav class="nav nav--opened">
+        <button class="nav__button">
+          <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="nav__list site-list">
           <li class="site-list__item">
@@ -36,9 +34,9 @@
             </a>
           </li>
         </ul>
-        <button class="nav__open">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <a class="logo-nav" href="#">
+          <span class="visually-hidden">Лого City of Sedona</span>
+        </a>
       </nav>
       <div class="header-background background-inner">
         <img class="background-inner__image" src="https://via.placeholder.com/282x49" width="282" height="49" alt="Sedona">
@@ -119,7 +117,7 @@
               </li>
             </ul>
           </fieldset>
-          <div class="main-form__block">
+          <div class="main-form__block main-form__block--last">
             <label class="main-form__title main-title">Опишите свои эмоции:</label>
             <textarea class="main-form__field form-text" name="emotion-text" id="emotion-text" cols="30" rows="8" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
