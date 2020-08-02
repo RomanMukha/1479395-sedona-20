@@ -1,0 +1,66 @@
+.player__window {
+  width: 100%;
+  display: block;
+}
+
+.player__interface {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: -45px;
+}
+
+.player__volume {
+  position: relative;
+  height: 45px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.player__scale {
+  margin-left: 23px;
+  margin-right: 23px;
+  height: 3px;
+  background-color: white;
+  opacity: 0.2;
+}
+
+.player__slider {
+  position: absolute;
+  left: 20%;
+  top: 16px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.player__controls {
+  background-color: $third-grey;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.player__replay {
+  width: 16px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.player__subtitles {
+  width: 32px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.player__fullscreen {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
