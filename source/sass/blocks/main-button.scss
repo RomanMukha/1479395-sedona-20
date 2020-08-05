@@ -1,13 +1,14 @@
 .main-button {
-  font-family: $mainfont;
+  font-family: inherit;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   color: white;
-  background-color: $mainblue;
+  background-color: $main-blue;
   border: none;
   text-decoration: none;
   display: block;
   text-align: center;
+  padding: 16px;
 }

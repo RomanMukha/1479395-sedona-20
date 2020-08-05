@@ -2,27 +2,32 @@
 @import "variables.scss";
 @import "fonts.scss";
 @import "global.scss";
-@import "page.scss";
 //
-@import "main-title.scss";
-@import "main-description.scss";
-@import "form-text.scss";
+@import "blocks/page.scss";
 //
-@import "main-button.scss";
+@import "blocks/main-title.scss";
+@import "blocks/main-description.scss";
+@import "blocks/form-text.scss";
+//
+@import "blocks/main-button.scss";
+@import "blocks/logo-nav.scss";
 // index
-@import "header-background.scss";
-@import "nav.scss";
-@import "site-list.scss";
+@import "blocks/header-background.scss";
+@import "blocks/nav.scss";
+@import "blocks/site-list.scss";
 //
-@import "features.scss";
-@import "features-primary.scss";
-@import "features-secondary.scss";
+@import "blocks/features.scss";
+@import "blocks/features-primary.scss";
+@import "blocks/features-secondary.scss";
+@import "blocks/booking.scss";
 //
-@import "page-footer.scss";
-@import "copyright.scss";
-@import "social.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/copyright.scss";
+@import "blocks/social.scss";
 // photo
-@import "intro.scss";
-@import "photo-card.scss";
+@import "blocks/intro.scss";
+@import "blocks/photo-card.scss";
+@import "blocks/video.scss";
+@import "blocks/player.scss";
 // form
-@import "main-form";
+@import "blocks/main-form";

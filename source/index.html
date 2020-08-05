@@ -3,16 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="logo-nav">
-        <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="City of Sedona">
-      </a>
-      <nav class="nav">
-        <button class="nav__close button-close">
-          <span class="visually-hidden">Закрыть меню</span>
+      <nav class="nav nav--opened">
+        <button class="nav__button">
+          <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -36,9 +34,9 @@
             </a>
           </li>
         </ul>
-        <button class="nav__open">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <a class="logo-nav">
+          <img src="img/logo-sedona-mobile.svg" width="102px" height="84px" alt="City of Sedona">
+        </a>
       </nav>
       <div class="header-background background-main">
         <img class="background-main__image" src="https://via.placeholder.com/282x214" width="282" height="214" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">

@@ -1,0 +1,9 @@
+.features-secondary {
+  border-bottom: $second-grey 1px solid;
+  padding: 26px 6px 24px 6px;
+  text-align: center;
+
+  &:last-child {
+    border: none;
+  }
+}
