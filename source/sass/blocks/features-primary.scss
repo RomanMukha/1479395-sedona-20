@@ -1,12 +1,31 @@
 .features-primary {
   background-color: $main-blue;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+  }
+
+  &--second {
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
 }
 
 .features-primary__wrap {
   color: white;
   background-color: $main-blue;
   padding: 39px 15px 39px 15px;
+
+  &--second {
+    @media (min-width: $tablet-width) {
+      grid-column: 2;
+      grid-row: 1;
+    }
+  }
 }
 
 .features-primary__list {
@@ -15,11 +34,33 @@
   list-style: none;
   margin: 0;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 60px 0;
+  }
+}
+
+.features-primary__element {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    text-align: center;
+  }
+}
+
+.features-primary__description-benefit {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
 
 .features-primary__number {
   line-height: 21px;
   color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
 
   &::before,
   &::after {
@@ -34,4 +75,7 @@
 
 .features-primary__img {
   display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 260px;
 }

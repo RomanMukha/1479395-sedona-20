@@ -13,6 +13,7 @@
 @import "blocks/logo-nav.scss";
 // index
 @import "blocks/header-background.scss";
+@import "blocks/background-main.scss";
 @import "blocks/nav.scss";
 @import "blocks/site-list.scss";
 //
@@ -25,7 +26,9 @@
 @import "blocks/copyright.scss";
 @import "blocks/social.scss";
 // photo
+@import "blocks/background-inner.scss";
 @import "blocks/intro.scss";
+@import "blocks/section-photo.scss";
 @import "blocks/photo-card.scss";
 @import "blocks/video.scss";
 @import "blocks/player.scss";

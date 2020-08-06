@@ -1,18 +1,50 @@
 .photo-card {
   border-bottom: $border-grey 1px solid;
   padding: 22px 20px 15px 20px;
+
+  &--popular {
+    @media (min-width: $tablet-width) {
+      grid-column: -1/1;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+  }
+}
+
+.photo-card__caption {
+  padding-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px 15px;
+    background-color: $third-grey;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 11px 20px 15px;
+    background-color: black;
+    color: white;
+    opacity: 0.3;
+    margin-top: -74px;
+  }
 }
 
 .photo-card__title {
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
 }
 
 .photo-card__author {
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
+  margin: 0;
 }
 
 .photo-card__likes {
@@ -21,4 +53,11 @@
   line-height: 24px;
   background: none;
   border: none;
+  color: inherit;
+}
+
+.photo-card__img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }

@@ -1,10 +1,24 @@
 .page-footer {
   padding: 29px 20px 23px 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
 }
 
 .page-footer__hashtag {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+}
+
+.page-footer__copyright {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

@@ -4,21 +4,38 @@
   padding: 0;
   margin: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: white;
+  }
 }
 
 .site-list__item {
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   margin-bottom: 1px;
-  background-color: $main-blue;
   display: block;
 
   &:first-child {
     box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+
+    @media (min-width: $tablet-width) {
+      box-shadow: none;
+    }
   }
 
   &:last-child {
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
     margin-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      box-shadow: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    box-shadow: none;
   }
 }
 
@@ -31,4 +48,12 @@
   display: block;
   padding-top: 10px;
   padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    color: black;
+    font-size: 14px;
+    line-height: 26px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
