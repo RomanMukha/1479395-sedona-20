@@ -1,3 +1,12 @@
+.main-form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
 .main-form__block {
   border: none;
   border-bottom: $border-grey 1px solid;
@@ -8,24 +17,102 @@
   margin-top: 20px;
   padding-bottom: 25px;
 
-  &--last {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/3;
+    border: none;
+    padding-bottom: 0;
+    border: red 3px solid;
+  }
+
+  &--feedback {
+    @media (min-width: $tablet-width) {
+      grid-column: 1/1;
+      grid-row: 1/1;
+    }
+  }
+
+  &--visitor {
+    @media (min-width: $tablet-width) {
+      grid-column: 2/2;
+      grid-row: 1/1;
+      border-left: $six-grey 1px solid;
+      padding-left: 58px;
+    }
+  }
+
+  &--emotion {
     border-bottom: none;
+    padding: 0;
+  }
+}
+
+.main-form__submit {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/3;
   }
 }
 
 .main-form__title {
   display: block;
   text-align: center;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+
+    &--borders {
+      // display: flex;
+      // align-items: center;
+      // justify-content: space-between;
+      // width: 100%;
+
+      // &::before,
+      // &::after {
+      //   content: "";
+      //   display: block;
+      //   width: 100%;
+      //   height: 1px;
+      //   background-color: $six-grey;
+      // }
+
+      // &::before {
+      //   margin-right: 60px;
+      // }
+
+      // &::after {
+      //   margin-left: 60px;
+      // }
+    }
+  }
+
+  &--visitor {
+    @media (min-width: $tablet-width) {
+      text-align: left;
+    }
+  }
 }
 
 .main-form__label {
   line-height: 26px;
+
+  &--visitor {
+    margin-right: 15px;
+  }
+
+  &--contacts {
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 8px;
+  }
 }
 
 .main-form__field {
+  display: block;
   font-family: inherit;
   background-color: $third-grey;
   border: none;
+  width: 100%;
+  padding: 18px 22px 14px;
 }
 
 .main-form__visitor-list,
@@ -35,6 +122,38 @@
   padding: 0;
 }
 
+.main-form__item {
+  margin-bottom: 20px;
+
+  &--visitor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--feedback {
+      margin-bottom: 30px;
+    }
+  }
+}
+
 .main-form__button {
   width: 100%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.main-form__wrap {
+  padding: 0 20px;
+}
+
+.main-form__hint {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }

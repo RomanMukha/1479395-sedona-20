@@ -50,55 +50,55 @@
           <p class="intro__description main-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
         <form class="main-form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="main-form__block">
-            <legend class="main-form__title main-title">Представьтесь:</legend>
+          <fieldset class="main-form__block main-form__block--visitor">
+            <legend class="main-form__title main-form__title--visitor main-title">Представьтесь:</legend>
             <ul class="main-form__visitor-list">
-              <li class="main-form__visitor-item">
-                <label for="input-name" class="main-form__label main-description">Имя*:</label>
+              <li class="main-form__item main-form__item--visitor">
+                <label for="input-name" class="main-form__label main-form__label--visitor main-description">Имя*:</label>
                 <input type="text" class="main-form__field form-text" id="input-name" name="name" placeholder="Петр"required>
               </li>
-              <li class="main-form__visitor-item">
-                <label for="input-surname" class="main-form__label main-description">Фамилия*:</label>
+              <li class="main-form__item main-form__item--visitor">
+                <label for="input-surname" class="main-form__label main-form__label--visitor main-description">Фамилия*:</label>
                 <input type="text" class="main-form__field form-text" id="input-surname" name="surname" placeholder="Иванов" required>
               </li>
-              <li class="main-form__visitor-item">
-                <label for="input-middlename" class="main-form__label main-description">Отчество:</label>
+              <li class="main-form__item main-form__item--visitor">
+                <label for="input-middlename" class="main-form__label main-form__label--visitor main-description">Отчество:</label>
                 <input type="text" class="main-form__field form-text" id="input-middlename" name="middlename" placeholder="Александрович">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="main-form__block">
-            <legend class="main-form__title main-title">Контактная информация:</legend>
+          <fieldset class="main-form__block main-form__block--contacts">
+            <legend class="main-form__title main-form__title--borders main-title">Контактная информация:</legend>
             <ul class="main-form__list">
-              <li class="main-form__item main-form__item--contacts">
-                <label for="input-tel" class="main-form__label main-description">Контактный телефон*:</label>
+              <li class="main-form__item">
+                <label for="input-tel" class="main-form__label main-form__label--contacts main-description">Контактный телефон*:</label>
                 <input type="tel" class="main-form__field main-form__field--tel form-text" id="input-tel" name="telephone" placeholder="Введите телефон" required>
               </li>
-              <li class="main-form__item main-form__item--contacts">
-                <label for="input-email" class="main-form__label main-description">Электронная почта*:</label>
+              <li class="main-form__item">
+                <label for="input-email" class="main-form__label main-form__label--contacts main-description">Электронная почта*:</label>
                 <input type="email" class="main-form__field main-form__field--email form-text" id="input-email" name="e-mail" placeholder="Введите e-mail" required>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="main-form__block">
+          <fieldset class="main-form__block main-form__block--feedback">
             <legend class="main-form__title main-title">Ваше общее впечатление:</legend>
             <ul class="main-form__list">
-              <li class="main-form__item">
+              <li class="main-form__item main-form__item--feedback">
                 <input type="radio" class="main-form__radio-input" id="feedback-good" name="feedback" value="good" checked>
                 <label for="feedback-good" class="main-form__label form-text">Скорее положительное</label>
               </li>
-              <li class="main-form__item">
+              <li class="main-form__item main-form__item--feedback">
                 <input type="radio" class="main-form__radio-input" id="feedback-bad" name="feedback" value="bad">
                 <label for="feedback-bad" class="main-form__label form-text">Скорее отрицательное</label>
               </li>
-              <li class="main-form__item">
+              <li class="main-form__item main-form__item--feedback">
                 <input type="radio" class="main-form__radio-input" id="feedback-dontknow" name="feedback" value="dontknow">
                 <label for="feedback-dontknow" class="main-form__label form-text">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="main-form__block">
-            <legend class="main-form__title main-title">Посещенные достопримечательности:</legend>
+          <fieldset class="main-form__block main-form__block--places">
+            <legend class="main-form__title main-form__title--borders main-title">Посещенные достопримечательности:</legend>
             <ul class="main-form__list">
               <li class="main-form__item">
                 <input type="checkbox" class="main-form__checkbox-input" id="places-bridge" name="visited-places" value="devil-bridge" checked>
@@ -118,11 +118,16 @@
               </li>
             </ul>
           </fieldset>
-          <div class="main-form__block main-form__block--last">
-            <label class="main-form__title main-title">Опишите свои эмоции:</label>
-            <textarea class="main-form__field form-text" name="emotion-text" id="emotion-text" cols="30" rows="8" placeholder="Опишите подробно все свои восторги"></textarea>
+          <div class="main-form__block main-form__block--emotion">
+            <div class="main-form__wrap">
+              <label class="main-form__title main-form__title--borders main-title">Опишите свои эмоции:</label>
+              <textarea class="main-form__field form-text" name="emotion-text" id="emotion-text" cols="30" rows="8" placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
           </div>
-          <button class="main-form__button main-button" type="submit">Отправить отзыв</button>
+          <div class="main-form__submit main-form__wrap">
+            <button class="main-form__button main-button" type="submit">Отправить отзыв</button>
+            <p class="main-form__hint main-description">* — обязательные поля</p>
+          </div>
         </form>
       </section>
     </main>
