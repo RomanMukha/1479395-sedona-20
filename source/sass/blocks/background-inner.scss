@@ -1,0 +1,8 @@
+.background-inner {
+  min-height: 158px;
+  background-position: bottom;
+
+  @media (min-width: $tablet-width) {
+    min-height: 290px;
+  }
+}

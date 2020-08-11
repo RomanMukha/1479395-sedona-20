@@ -2,6 +2,21 @@
   border-bottom: $border-grey 1px solid;
   padding: 34px 20px 20px 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 20px;
+    width: 485px;
+    border: none;
+    margin: 0 auto;
+  }
+}
+
+.intro__title {
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .intro__description {

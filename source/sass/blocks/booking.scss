@@ -4,5 +4,14 @@
 }
 
 .booking__map {
+  height: 350px;
   margin-top: 49px;
+}
+
+.booking__button {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }

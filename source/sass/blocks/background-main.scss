@@ -1,0 +1,8 @@
+.background-main {
+  min-height: 389px;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 518px;
+  }
+}

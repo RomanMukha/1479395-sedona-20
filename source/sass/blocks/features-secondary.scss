@@ -1,9 +1,24 @@
 .features-secondary {
   border-bottom: $second-grey 1px solid;
-  padding: 26px 6px 24px 6px;
+  padding: 26px 6px 24px;
   text-align: center;
 
   &:last-child {
     border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 26px 40px;
+  }
+}
+
+.features-secondary__number {
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  &::before,
+  &::after {
+    content: "—";
   }
 }

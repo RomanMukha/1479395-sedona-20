@@ -8,4 +8,8 @@
   right: 0;
   text-align: center;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
 }
