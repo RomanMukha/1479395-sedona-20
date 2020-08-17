@@ -6,6 +6,14 @@
   padding: 0;
 }
 
+.social__item {
+  margin-right: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 .social__link {
   display: block;
   width: 46px;

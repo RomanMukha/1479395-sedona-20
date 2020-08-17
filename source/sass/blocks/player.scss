@@ -7,6 +7,13 @@
   padding-left: 20px;
   padding-right: 20px;
   margin-top: -45px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    margin-top: -93px;
+  }
 }
 
 .player__volume {
@@ -14,8 +21,19 @@
   height: 45px;
   padding-top: 21px;
   padding-bottom: 21px;
-  background-color: black;
-  opacity: 0.6;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    height: 93px;
+    width: 70%;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    z-index: 2;
+    left: 80px;
+    bottom: 0;
+    background-color: transparent;
+  }
 }
 
 .player__scale {
@@ -35,6 +53,10 @@
   border-radius: 50%;
   background-color: white;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 41px;
+  }
 }
 
 .player__controls {
@@ -45,6 +67,11 @@
   align-items: center;
   padding-left: 24px;
   padding-right: 24px;
+
+  @media (min-width: $tablet-width) {
+    height: 93px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 }
 
 .player__replay {

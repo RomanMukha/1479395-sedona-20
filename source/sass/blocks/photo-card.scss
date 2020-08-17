@@ -1,6 +1,6 @@
 .photo-card {
   border-bottom: $border-grey 1px solid;
-  padding: 22px 20px 15px 20px;
+  padding: 22px 20px 15px;
 
   &--popular {
     @media (min-width: $tablet-width) {
@@ -60,4 +60,12 @@
   width: 100%;
   display: block;
   object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 267px;
+
+    &--popular {
+      height: 400px;
+    }
+  }
 }

@@ -15,7 +15,10 @@
 }
 
 .page__wrap {
-  max-width: 1280px;
-  padding: 0 40px;
+  max-width: $desktop-width;
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+  }
 }
