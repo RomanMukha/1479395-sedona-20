@@ -15,8 +15,14 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
   background-color: $main-blue;
+}
+
+.social__icon {
+  fill: white;
 }
