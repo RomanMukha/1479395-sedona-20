@@ -9,3 +9,15 @@
   width: 27px;
   height: 34px;
 }
+
+.copyright__icon {
+  fill: black;
+
+  &:hover {
+    fill: $main-blue;
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+}

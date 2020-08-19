@@ -55,11 +55,50 @@
   padding-top: 10px;
   padding-bottom: 5px;
 
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $button-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--active {
+    cursor: default;
+  }
+
   @media (min-width: $tablet-width) {
     color: black;
     font-size: 14px;
     line-height: 26px;
     padding-top: 15px;
     padding-bottom: 15px;
+    background-color: transparent;
+
+    &:hover {
+      color: $main-blue;
+      background-color: transparent;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: transparent;
+    }
+
+    &--active {
+      color: $main-menu-active;
+
+      &:hover {
+        background-color: transparent;
+        color: $main-menu-hover;
+      }
+
+      &:active {
+        background-color: transparent;
+        color: $main-menu-active;
+        opacity: 0.3;
+      }
+    }
   }
 }

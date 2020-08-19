@@ -14,6 +14,10 @@
   }
 }
 
+.social__icon {
+  fill: white;
+}
+
 .social__link {
   display: flex;
   justify-content: center;
@@ -21,8 +25,16 @@
   width: 46px;
   height: 48px;
   background-color: $main-blue;
-}
 
-.social__icon {
-  fill: white;
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $button-active;
+
+    .social__icon {
+      fill: rgba(255, 255, 255, 0.3);
+    }
+  }
 }
