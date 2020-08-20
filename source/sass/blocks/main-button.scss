@@ -11,4 +11,18 @@
   display: block;
   text-align: center;
   padding: 16px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $button-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $border-grey;
+  }
 }

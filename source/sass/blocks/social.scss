@@ -14,9 +14,27 @@
   }
 }
 
+.social__icon {
+  fill: white;
+}
+
 .social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
   background-color: $main-blue;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $button-active;
+
+    .social__icon {
+      fill: rgba(255, 255, 255, 0.3);
+    }
+  }
 }

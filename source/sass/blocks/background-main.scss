@@ -6,3 +6,11 @@
     min-height: 518px;
   }
 }
+
+.background-main__image {
+  width: 282px;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+  }
+}
