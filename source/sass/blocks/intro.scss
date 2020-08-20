@@ -4,10 +4,14 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 20px;
+    padding: 65px 20px 60px;
     width: 485px;
     border: none;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 110px;
   }
 }
 
