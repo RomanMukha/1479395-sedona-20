@@ -14,12 +14,13 @@
       content: "";
       position: absolute;
       height: 37px;
-      background: url("../img/bg-triangle.svg") no-repeat;
-      background-size: cover;
-      background-position: bottom;
       left: 0;
       right: 0;
       bottom: -37px;
+      background-image: url("../img/bg-triangle.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
     }
   }
 }

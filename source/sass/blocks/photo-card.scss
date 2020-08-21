@@ -20,13 +20,13 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: auto;
     margin: 0;
     padding: 11px 20px 15px;
-    background-color: $third-grey;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: auto;
+    background-color: $third-grey;
 
     &--tablet-right {
       background-color: $forth-grey;
@@ -34,9 +34,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     padding: 11px 20px 15px;
     background-color: rgba(0, 0, 0, 0.3);
-    mix-blend-mode: hard-light;
     color: white;
     margin-top: -74px;
   }
@@ -96,11 +96,24 @@
   }
 }
 
-.photo-card__img {
-  width: 280px;
+.photo-card__img-link {
   display: block;
-  object-fit: cover;
+  min-height: 280px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 267px;
+
+    &--popular {
+      min-height: 400px;
+    }
+  }
+}
+
+.photo-card__img {
+  display: block;
+  width: 280px;
   margin: 0 auto;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     width: 100%;
