@@ -1,8 +1,20 @@
 .background-inner {
   min-height: 158px;
   background-position: bottom;
+  background-size: auto;
 
   @media (min-width: $tablet-width) {
     min-height: 290px;
+    background-size: cover;
+  }
+}
+
+.background-inner__image {
+  width: 229px;
+  height: 39px;
+
+  @media (min-width: $tablet-width) {
+    width: 457px;
+    height: 78px;
   }
 }

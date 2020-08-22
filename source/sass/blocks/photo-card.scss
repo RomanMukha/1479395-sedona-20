@@ -12,24 +12,38 @@
     border: none;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .photo-card__caption {
   padding-top: 11px;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     padding: 11px 20px 15px;
-    background-color: $third-grey;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: $third-grey;
+
+    &--tablet-right {
+      background-color: $forth-grey;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 0;
     padding: 11px 20px 15px;
-    background-color: black;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
     color: white;
-    opacity: 0.3;
-    margin-top: -74px;
   }
 }
 
@@ -40,28 +54,76 @@
   margin: 0;
 }
 
+.photo-card__title-wrap {
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .photo-card__author {
-  font-size: 14px;
   line-height: 24px;
   text-transform: none;
-  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    color: white;
+  }
 }
 
 .photo-card__likes {
+  font-family: $main-font;
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
   background: none;
   border: none;
   color: inherit;
+  display: flex;
+  padding: 0;
+  cursor: pointer;
+}
+
+.photo-card__like-icon {
+  width: 23px;
+  height: 21px;
+  margin-right: 14px;
+  opacity: 0.3;
+  fill: black;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    opacity: 1;
+    fill: white;
+  }
+}
+
+.photo-card__img-link {
+  display: block;
+  min-height: 280px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 267px;
+
+    &--popular {
+      min-height: 400px;
+    }
+  }
 }
 
 .photo-card__img {
-  width: 100%;
   display: block;
+  width: 280px;
+  margin: 0 auto;
   object-fit: cover;
+  height: 280px;
+  background-color: $main-blue;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     height: 267px;
 
     &--popular {
