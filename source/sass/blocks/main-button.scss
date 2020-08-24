@@ -13,7 +13,8 @@
   padding: 16px;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $button-hover;
   }
 

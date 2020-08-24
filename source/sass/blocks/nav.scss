@@ -37,7 +37,8 @@
   cursor: pointer;
   z-index: 2;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 
