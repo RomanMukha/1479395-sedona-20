@@ -286,11 +286,11 @@
   }
 
   &--tel::after {
-    background-image: url(../../img/icon-phone.svg);
+    background-image: url("../img/icon-phone.svg");
   }
 
   &--email::after {
-    background-image: url(../../img/icon-mail.svg);
+    background-image: url("../img/icon-mail.svg");
   }
 }
 
@@ -315,7 +315,7 @@
   &::before {
     content: "";
     position: absolute;
-    left: 0px;
+    left: 0;
     top: -34px;
     width: 56px;
     height: 56px;
@@ -335,7 +335,7 @@
   &:checked::before {
     content: "";
     position: absolute;
-    left: 0px;
+    left: 0;
     top: -34px;
     width: 56px;
     height: 56px;
@@ -373,7 +373,7 @@
   &::before {
     content: "";
     position: absolute;
-    left: 0px;
+    left: 0;
     top: -34px;
     width: 56px;
     height: 56px;
@@ -402,7 +402,7 @@
   &:checked::before {
     content: "";
     position: absolute;
-    left: 0px;
+    left: 0;
     top: -34px;
     width: 56px;
     height: 56px;
