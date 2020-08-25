@@ -23,7 +23,9 @@
 }
 
 .nav--closed .nav__list {
-  display: none;
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .nav__button {
@@ -37,7 +39,8 @@
   cursor: pointer;
   z-index: 2;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 

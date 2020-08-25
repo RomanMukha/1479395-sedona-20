@@ -30,9 +30,13 @@
     padding-top: 46px;
     padding-bottom: 46px;
     z-index: 2;
-    left: 80px;
+    left: 60px;
     bottom: 0;
     background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 80px;
   }
 }
 
@@ -70,24 +74,74 @@
 
   @media (min-width: $tablet-width) {
     height: 93px;
+    padding-left: 35px;
+    padding-right: 41px;
     background-color: rgba(0, 0, 0, 0.6);
   }
 }
 
+.player__controls-right {
+  width: 84px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
 .player__replay {
+  margin: 0;
+  padding: 0;
   width: 16px;
-  height: 22px;
+  height: 20px;
+  display: block;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
 .player__subtitles {
+  margin: 0;
+  padding: 0;
   width: 32px;
-  height: 22px;
+  height: 20px;
+  display: block;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
 .player__fullscreen {
+  margin: 0;
+  padding: 0;
   width: 20px;
   height: 20px;
+  display: block;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
+}
+
+.player__button-icon {
+  fill: $player-grey;
+
+  &:hover,
+  &:focus {
+    fill: $second-black;
+  }
+
+  &:active {
+    fill: rgba(51, 51, 51, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    fill: white;
+
+    &:hover,
+    &:focus {
+      fill: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      fill: rgba(255, 255, 255, 0.3);
+    }
+  }
 }
