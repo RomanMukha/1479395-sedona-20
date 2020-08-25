@@ -5,24 +5,22 @@
   margin-right: 15px;
 }
 
-.copyright__link {
-  width: 27px;
-  height: 34px;
-
-  &:focus .copyright__icon {
-    fill: $main-blue;
-  }
-}
-
 .copyright__icon {
   display: block;
   fill: black;
+}
 
-  &:hover {
+.copyright__link {
+  width: 27px;
+  height: 34px;
+  display: block;
+
+  &:focus .copyright__icon,
+  &:hover .copyright__icon {
     fill: $main-blue;
   }
 
-  &:active {
+  &:active .copyright__icon {
     fill: rgba(0, 0, 0, 0.3);
   }
 }

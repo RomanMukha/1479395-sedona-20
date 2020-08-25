@@ -55,18 +55,14 @@
   padding-top: 10px;
   padding-bottom: 5px;
 
-  &:hover,
-  &:focus {
+  &[href]:hover,
+  &[href]:focus {
     background-color: $button-hover;
   }
 
-  &:active {
+  &[href]:active {
     background-color: $button-active;
     color: rgba(255, 255, 255, 0.3);
-  }
-
-  &--active {
-    cursor: default;
   }
 
   @media (min-width: $tablet-width) {
@@ -77,13 +73,13 @@
     padding-bottom: 15px;
     background-color: transparent;
 
-    &:hover,
-    &:focus {
+    &[href]:hover,
+    &[href]:focus {
       color: $main-blue;
       background-color: transparent;
     }
 
-    &:active {
+    &[href]:active {
       color: rgba(0, 0, 0, 0.3);
       background-color: transparent;
     }
@@ -91,13 +87,13 @@
     &--active {
       color: $main-menu-active;
 
-      &:hover,
-      &:focus {
+      &[href]:hover,
+      &[href]:focus {
         background-color: transparent;
         color: $main-menu-hover;
       }
 
-      &:active {
+      &[href]:active {
         background-color: transparent;
         color: $main-menu-active;
         opacity: 0.3;
