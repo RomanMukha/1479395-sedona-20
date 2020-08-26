@@ -1,5 +1,6 @@
 .logo-nav {
   position: absolute;
+  display: block;
   width: 102px;
   height: 84px;
   margin-left: auto;
@@ -11,5 +12,20 @@
 
   @media (min-width: $tablet-width) {
     top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 187px;
+    height: 97px;
+  }
+}
+
+.logo-nav__icon {
+  width: 102px;
+  height: 84px;
+
+  @media (min-width: $desktop-width) {
+    width: 187px;
+    height: 97px;
   }
 }
