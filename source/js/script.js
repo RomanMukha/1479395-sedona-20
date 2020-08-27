@@ -18,47 +18,52 @@
     }
   }
 
-  submitButton.addEventListener("click", (evt) => {
-    const form = document.querySelector(".main-form");
-    const collection = [];
-    recursiveQueue(form, collection);
+  if (submitButton) {
+    submitButton.addEventListener("click", (evt) => {
+      const form = document.querySelector(".main-form");
+      const collection = [];
+      recursiveQueue(form, collection);
 
-    const somAreFalse = collection.some(function (elem) {
-      return elem === false;
+      const somAreFalse = collection.some((elem) => {
+        return elem === false;
+      });
+      if (somAreFalse) {
+        // If some validation errors;
+        popupFailure.classList.add("popup-failure--active");
+      } else {
+        // If no errors;
+        evt.preventDefault();
+        popupSuccess.classList.add("popup-success--active");
+        submitButton.disabled = true;
+      }
     });
-    if (somAreFalse) {
-      popupFailure.classList.add("popup-failure--active");
-    } else {
-      // All is good;
-      evt.preventDefault();
-      popupSuccess.classList.add("popup-success--active");
-      submitButton.disabled = true;
-    }
-  });
+  }
 
-  popupFailureClose.addEventListener("click", () => {
-    if (popupFailure.classList.contains("popup-failure--active")) {
-      popupFailure.classList.remove("popup-failure--active");
-    } else {
-      null;
-    }
-  });
+  if (popupFailureClose) {
+    popupFailureClose.addEventListener("click", () => {
+      if (popupFailure.classList.contains("popup-failure--active")) {
+        popupFailure.classList.remove("popup-failure--active");
+      }
+    });
+  };
 
-  popupSuccessClose.addEventListener("click", () => {
-    if (popupSuccess.classList.contains("popup-success--active")) {
-      popupSuccess.classList.remove("popup-success--active");
-    } else {
-      null;
-    }
-  });
+  if (popupSuccessClose) {
+    popupSuccessClose.addEventListener("click", () => {
+      if (popupSuccess.classList.contains("popup-success--active")) {
+        popupSuccess.classList.remove("popup-success--active");
+      }
+    });
+  };
 
-  menuButton.addEventListener("click", () => {
-    if (menuNav.classList.contains("nav--opened")) {
-      menuNav.classList.remove("nav--opened");
-      menuNav.classList.add("nav--closed");
-    } else {
-      menuNav.classList.remove("nav--closed");
-      menuNav.classList.add("nav--opened");
-    }
-  });
+  if (menuButton) {
+    menuButton.addEventListener("click", () => {
+      if (menuNav.classList.contains("nav--opened")) {
+        menuNav.classList.remove("nav--opened");
+        menuNav.classList.add("nav--closed");
+      } else {
+        menuNav.classList.remove("nav--closed");
+        menuNav.classList.add("nav--opened");
+      }
+    });
+  }
 })();
