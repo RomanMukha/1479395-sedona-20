@@ -74,7 +74,7 @@ const images = () => {
       imagemin.svgo({plugins: [{removeViewBox: false}]})
     ]))
     .pipe(gulp.dest("build/img"))
-    .pipe(sync.stream());
+    .pipe(sync.stream({once: true}));
 };
 
 exports.images = images;
@@ -97,7 +97,7 @@ const sprite = () => {
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
-    .pipe(sync.stream());
+    .pipe(sync.stream({once: true}));
 };
 
 exports.sprite = sprite;
@@ -126,10 +126,10 @@ const watcher = () => {
   gulp.watch(["source/img/**/*.{jpg,png,svg,webp}", "!source/img/**/icon-*.svg"], gulp.series("images"));
   gulp.watch(["source/fonts/**/*.{woff,woff2}", "source/js/**/*.js", "source/*.ico"], gulp.series("copy"));
   gulp.watch("source/img/**/icon-*.svg", gulp.series("sprite"));
-  gulp.watch(["source/img/**/*.{jpg,png,svg,webp}",
-  "source/*.html",
-  "source/fonts/**/*.{woff,woff2}",
-  "source/js/**/*.js"
+  gulp.watch([
+    "source/*.html",
+    "source/fonts/**/*.{woff,woff2}",
+    "source/js/**/*.js"
 ]).on("change", sync.reload);
 };
 
