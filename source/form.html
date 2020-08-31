@@ -4,28 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
-
-  <svg style="display:none">
-    <symbol viewBox="0 0 23.049 16.249" id="icon-checkbox">
-      <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
-    </symbol>
-    <symbol viewBox="0 0 18 15" id="icon-twitter">
-      <path d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
-    </symbol>
-    <symbol viewBox="0 0 9 19" id="icon-facebook">
-      <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
-    </symbol>
-    <symbol viewBox="0 0 20 14" id="icon-youtube">
-      <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
-    </symbol>
-    <symbol viewBox="0 0 27 34" id="icon-academy">
-      <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
-    </symbol>
-  </svg>
-
     <div class="page__wrap">
       <header class="page-header">
         <nav class="nav nav--opened">
@@ -130,28 +111,28 @@
                 <li class="main-form__item main-form__item--places">
                   <input type="checkbox" class="main-form__checkbox-input" id="places-bridge" name="visited-places" value="devil-bridge" checked>
                   <svg class="main-form__checkbox-icon" width="23px" height="17px">
-                    <use xlink:href="#icon-checkbox"></use>
+                    <use xlink:href="img/sprite.svg#icon-tick"></use>
                   </svg>
                   <label for="places-bridge" class="main-form__label main-form__label--checkbox form-text">Мост Дьявола</label>
                 </li>
                 <li class="main-form__item main-form__item--places">
                   <input type="checkbox" class="main-form__checkbox-input" id="places-mountainbell" name="visited-places" value="mountain-bell" checked>
                   <svg class="main-form__checkbox-icon" width="23px" height="17px">
-                    <use xlink:href="#icon-checkbox"></use>
+                    <use xlink:href="img/sprite.svg#icon-tick"></use>
                   </svg>
                   <label for="places-mountainbell" class="main-form__label main-form__label--checkbox form-text">Гора-Колокол</label>
                 </li>
                 <li class="main-form__item main-form__item--places">
                   <input type="checkbox" class="main-form__checkbox-input" id="places-park" name="visited-places" value="slide-park" checked>
                   <svg class="main-form__checkbox-icon" width="23px" height="17px">
-                    <use xlink:href="#icon-checkbox"></use>
+                    <use xlink:href="img/sprite.svg#icon-tick"></use>
                   </svg>
                   <label for="places-park" class="main-form__label main-form__label--checkbox form-text">Слайд-парк</label>
                 </li>
                 <li class="main-form__item main-form__item--places">
                   <input type="checkbox" class="main-form__checkbox-input" id="places-redrocks" name="visited-places" value="red-rocks">
                   <svg class="main-form__checkbox-icon" width="23px" height="17px">
-                    <use xlink:href="#icon-checkbox"></use>
+                    <use xlink:href="img/sprite.svg#icon-tick"></use>
                   </svg>
                   <label for="places-redrocks" class="main-form__label main-form__label--checkbox form-text">Красные скалы</label>
                 </li>
@@ -178,7 +159,7 @@
               <a class="social__link social__link--twitter" href="#">
                 <span class="visually-hidden">Мы в twitter!</span>
                 <svg class="social__icon social__icon--twitter" width="18px" height="15px">
-                  <use xlink:href="#icon-twitter"></use>
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -186,7 +167,7 @@
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Мы в facebook!</span>
                 <svg class="social__icon social__icon--facebook" width="9px" height="19px">
-                  <use xlink:href="#icon-facebook"></use>
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
@@ -194,7 +175,7 @@
               <a class="social__link social__link--youtube" href="#">
                 <span class="visually-hidden">Мы на youtube!</span>
                 <svg class="social__icon social__icon--youtube" width="20px" height="14px">
-                  <use xlink:href="#icon-youtube"></use>
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>
             </li>
@@ -205,7 +186,7 @@
           <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
             <span class="visually-hidden">HTML-Academy</span>
             <svg class="copyright__icon" width="27px" height="34px">
-              <use xlink:href="#icon-academy"></use>
+              <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
             </svg>
           </a>
         </div>

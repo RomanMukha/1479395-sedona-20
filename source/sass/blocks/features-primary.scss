@@ -129,11 +129,23 @@
 .features-primary__icon {
   width: 40px;
   height: 38px;
-  fill: $main-blue;
   grid-row: 1/2;
+  fill: $main-blue;
 
   @media (min-width: $tablet-width) {
-    width: 76px;
-    height: 75px;
+    &--housing {
+      width: 75px;
+      height: 73px;
+    }
+
+    &--souvenirs {
+      width: 64px;
+      height: 76px;
+    }
+
+    &--food {
+      width: 76px;
+      height: 70px;
+    }
   }
 }
