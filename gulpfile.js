@@ -11,6 +11,8 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const htmlmin = require("gulp-htmlmin");
+const terser = require("gulp-terser");
 
 // clean
 
@@ -20,12 +22,11 @@ const clean = () => {
 
 exports.clean = clean;
 
-// Copy
+// Copy fonts and .ico
 
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/js/**",
     "source/*.ico",
   ], {
     base: "source"
@@ -35,14 +36,25 @@ const copy = () => {
 
 exports.copy = copy;
 
-// HTML copy
+// HTML mini and copy
 
 const html = () => {
   return gulp.src("source/*.html")
-  .pipe(gulp.dest("build"));
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest("build"));
 };
 
 exports.html = html;
+
+// JS mini and copy
+
+const jsmin = () => {
+  return gulp.src("source/js/*.js")
+    .pipe(terser())
+    .pipe(gulp.dest("build/js"));
+};
+
+exports.jsmin = jsmin;
 
 // Styles
 
@@ -123,9 +135,10 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html", gulp.series("html"));
+  gulp.watch("source/js/**/*.js", gulp.series("jsmin"));
   gulp.watch(["source/img/**/*.{jpg,png,svg,webp}", "!source/img/**/icon-*.svg"], gulp.series("images"));
-  gulp.watch(["source/fonts/**/*.{woff,woff2}", "source/js/**/*.js", "source/*.ico"], gulp.series("copy"));
-  gulp.watch("source/img/**/icon-*.svg", gulp.series("sprite"));
+  gulp.watch(["source/fonts/**/*.{woff,woff2}", "source/*.ico"], gulp.series("copy"));
+  gulp.watch("source/img/**/icon-*.svg", gulp.series("styles", "sprite"));
   gulp.watch([
     "source/*.html",
     "source/fonts/**/*.{woff,woff2}",
@@ -134,9 +147,9 @@ const watcher = () => {
 };
 
 exports.build = gulp.series(
-  clean, copy, html, images, sprite, styles
+  clean, copy, html, jsmin, images, sprite, styles
 );
 
 exports.default = gulp.series(
-  clean, copy, html, images, sprite, styles, server, watcher
+  clean, copy, html, jsmin, images, sprite, styles, server, watcher
 );
