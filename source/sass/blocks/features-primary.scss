@@ -18,25 +18,42 @@
 .features-primary__wrap {
   color: white;
   background-color: $main-blue;
-  padding: 87px 15px 39px 15px;
+  padding: 74px 0 39px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 39px;
+    padding: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   &--second {
     padding-top: 39px;
+    padding-bottom: 34px;
 
     @media (min-width: $tablet-width) {
       grid-column: 2;
       grid-row: 1;
+      padding: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 2;
+      grid-row: 1;
+      padding-top: 10px;
+      padding-left: 90px;
+      padding-right: 90px;
+      padding-bottom: 21px;
     }
   }
 }
 
 .features-primary__list {
   background-color: white;
-  padding: 26px 20px 35px;
+  padding: 28px 20px 37px;
   list-style: none;
   margin: 0;
   text-align: left;
@@ -45,13 +62,13 @@
     grid-column: 1/3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 72px;
+    grid-column-gap: 58px;
     padding: 60px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 78px 80px 58px;
-    grid-column-gap: 110px;
+    padding: 60px 50px 78px;
+    grid-column-gap: 100px;
   }
 }
 
@@ -60,8 +77,8 @@
   grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
   grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  margin-bottom: 15px;
+  grid-row-gap: 11px;
+  margin-bottom: 20px;
 
   &:last-child {
     margin-bottom: 0;
@@ -89,6 +106,11 @@
 
 .features-primary__title-benefit {
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .features-primary__description-benefit {
@@ -98,6 +120,25 @@
     text-align: center;
     grid-row: 3/3;
     grid-column: 1/1;
+    padding: 0 2px;
+
+    &--food {
+      padding: 0 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--food {
+      padding: 0;
+    }
+  }
+}
+
+.features-primary__souvenirs-indent {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -106,10 +147,27 @@
   color: white;
   margin-top: 15px;
   margin-bottom: 15px;
+  margin-right: 3px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
 
   &::before,
   &::after {
     content: "—";
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}
+
+.features-primary__title {
+  @media (min-width: $tablet-width) {
+    width: 151px;
+    margin: 0 auto;
+    font-size: 21px;
+    line-height: 26px;
   }
 }
 
@@ -122,13 +180,17 @@
   display: block;
   object-fit: cover;
   width: 100%;
-  height: 260px;
+  height: 258px;
   background-color: $main-menu-active;
+
+  @media (min-width: $tablet-width) {
+    height: 257px;
+  }
 }
 
 .features-primary__icon {
   width: 40px;
-  height: 38px;
+  height: 37px;
   grid-row: 1/2;
   fill: $main-blue;
 

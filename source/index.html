@@ -12,7 +12,7 @@
     <div class="page__wrap">
       <header class="page-header">
         <nav class="nav nav--opened">
-          <button class="nav__button">
+          <button class="nav__button nav__button--nojs">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="nav__list site-list">
@@ -41,7 +41,7 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-              <img class="logo-nav__icon" src="img/logo-sedona-mobile.svg" width="102px" height="84px" alt="City of Sedona">
+              <img class="logo-nav__icon" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="City of Sedona">
             </picture>
           </a>
         </nav>
@@ -88,7 +88,7 @@
                 </svg>
                 <h4 class="features-primary__title-benefit main-title">Сувениры</h4>
                 <p class="features-primary__description-benefit main-description">
-                  Не только китайского, но и местного производства!
+                  Не только китайского,<br class="features-primary__souvenirs-indent"> но и местного производства!
                 </p>
               </li>
               <li class="features-primary__element features-primary__element--food">
@@ -96,7 +96,7 @@
                   <use xlink:href="img/sprite.svg#icon-burger"></use>
                 </svg>
                 <h4 class="features-primary__title-benefit main-title">Еда</h4>
-                <p class="features-primary__description-benefit main-description">
+                <p class="features-primary__description-benefit features-primary__description-benefit--food main-description">
                   Всегда заказывайте фирменный бургер, вы не разочаруетесь!
                 </p>
               </li>
@@ -120,12 +120,12 @@
             </div>
           </section>
           <div class="features__wrap">
-            <section class="features-secondary">
+            <section class="features-secondary features-secondary--place">
               <h3 class="features-secondary__title main-title">Небольшая площадь</h3>
               <p class="features-secondary__number main-description">№3</p>
               <p class="features-secondary__description main-description">Все интересные места находятся очень близко</p>
             </section>
-            <section class="features-secondary">
+            <section class="features-secondary features-secondary--road">
               <h3 class="features-secondary__title main-title">Красивая дорога</h3>
               <p class="features-secondary__number main-description">№4</p>
               <p class="features-secondary__description main-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -144,7 +144,7 @@
             <a href="form.html" class="booking__button main-button">Найти гостиницу</a>
           </div>
           <figure class="booking__map-wrap">
-            <iframe class="booking__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d591464.6227566833!2d-111.8436728057483!3d35.02143925839546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1598266844438!5m2!1sru!2sru" width="100%" height="350" tabindex="0" allowfullscreen title="Седона, Аризона 86336, США"></iframe>
+            <iframe class="booking__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d591464.6227566833!2d-111.8436728057483!3d35.02143925839546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1598266844438!5m2!1sru!2sru" height="350" tabindex="0" allowfullscreen title="Седона, Аризона 86336, США"></iframe>
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">

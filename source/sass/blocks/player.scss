@@ -26,17 +26,18 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     height: 93px;
-    width: 70%;
+    width: 67%;
     padding-top: 46px;
     padding-bottom: 46px;
     z-index: 2;
-    left: 60px;
+    left: 70px;
     bottom: 0;
     background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
-    left: 80px;
+    left: 70px;
+    width: 73%;
   }
 }
 
@@ -50,16 +51,21 @@
 
 .player__slider {
   position: absolute;
-  left: 20%;
-  top: 16px;
-  width: 13px;
-  height: 13px;
+  left: 21%;
+  top: 17px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: white;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    top: 41px;
+    top: 42px;
+    left: 31%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 23%;
   }
 }
 

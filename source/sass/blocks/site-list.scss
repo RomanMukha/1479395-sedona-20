@@ -42,6 +42,10 @@
 
   @media (min-width: $tablet-width) {
     box-shadow: none;
+
+    &:nth-child(3) {
+      margin-left: 5px;
+    }
   }
 }
 

@@ -48,6 +48,10 @@
     opacity: 0.3;
   }
 
+  &--nojs {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
