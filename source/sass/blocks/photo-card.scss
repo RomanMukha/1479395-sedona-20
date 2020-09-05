@@ -48,7 +48,7 @@
     bottom: 0;
     padding: 15px 30px 15px 20px;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(black, 0.3);
     color: white;
   }
 
@@ -86,7 +86,7 @@
 }
 
 .photo-card__likes {
-  display: block;
+  display: flex;
   font-family: $main-font;
   font-weight: bold;
   font-size: 14px;
@@ -94,7 +94,6 @@
   background: none;
   border: none;
   color: inherit;
-  display: flex;
   padding: 0;
   cursor: pointer;
 }
