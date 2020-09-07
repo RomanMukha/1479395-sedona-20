@@ -24,6 +24,11 @@
   margin-top: 20px;
   padding-bottom: 25px;
 
+  &--places {
+    margin-top: 17px;
+    padding-bottom: 21px;
+  }
+
   &--emotion {
     border-bottom: none;
     padding: 0;
@@ -48,12 +53,28 @@
       grid-column: 2/2;
       grid-row: 1/1;
       border-left: $six-grey 1px solid;
-      padding-left: 13%;
+      padding-left: 18%;
+    }
+
+    &--contacts {
+      margin-bottom: 54px;
+    }
+
+    &--places {
+      margin-bottom: 68px;
+    }
+
+    &--emotion {
+      margin-bottom: 60px;
     }
 
     @media (min-width: $desktop-width) {
       &--contacts {
         margin-bottom: 52px;
+      }
+
+      &--visitor {
+        padding-left: 16%;
       }
     }
   }
@@ -68,41 +89,73 @@
   }
 }
 
+.main-form__borders {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+
+    &::before,
+    &::after {
+      content: "";
+      flex-grow: 1;
+      flex-shrink: 0;
+      height: 1px;
+      background-color: $six-grey;
+    }
+
+    &::before {
+      margin-bottom: 7px;
+      margin-right: 60px;
+    }
+
+    &::after {
+      margin-bottom: 7px;
+      margin-left: 60px;
+    }
+
+    &--emotion {
+      &::before {
+        margin-right: 75px;
+      }
+
+      &::after {
+        margin-left: 75px;
+      }
+    }
+  }
+}
+
 .main-form__title {
   display: block;
   text-align: center;
+  margin: 0 auto;
   margin-bottom: 20px;
+
+  &--contacts {
+    margin-bottom: 15px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     margin-bottom: 53px;
 
     &--borders {
-      display: flex;
-      align-items: center;
       width: 100%;
-
-      &::before,
-      &::after {
-        content: "";
-        flex-grow: 1;
-        flex-shrink: 0;
-        height: 1px;
-        background-color: $six-grey;
-      }
-
-      &::before {
-        margin-right: 60px;
-      }
-
-      &::after {
-        margin-left: 60px;
-      }
     }
 
     &--visitor,
     &--feedback {
       text-align: left;
+      padding-top: 10px;
+    }
+
+    &--contacts {
+      padding-top: 5px;
+      margin-bottom: 20px;
+    }
+
+    &--places {
+      margin-bottom: 40px;
     }
   }
 
@@ -112,7 +165,7 @@
     }
 
     &--feedback {
-      text-align: center;
+      margin-left: 80px;
     }
   }
 }
@@ -133,7 +186,7 @@
 
   &--radio,
   &--checkbox {
-    margin-left: 68px;
+    margin-left: 69px;
   }
 
   @media (min-width: $desktop-width) {
@@ -151,12 +204,14 @@
   background-color: $third-grey;
   border: 4px solid $third-grey;
   width: 100%;
-  padding: 14px 22px 10px;
+  min-width: 180px;
+  padding: 14px 18px 10px;
 
   &--textarea {
     resize: vertical;
     min-height: 160px;
     max-height: 600px;
+    padding: 5px 17px;
   }
 
   &:hover {
@@ -169,6 +224,12 @@
     background-color: white;
     border: 4px solid $border-grey;
     outline: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--textarea {
+      padding: 15px 17px 5px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -188,9 +249,10 @@
     &--places {
       display: grid;
       grid-template-columns: 210px 210px;
-      grid-column-gap: 10%;
-      grid-row-gap: 40px;
+      grid-column-gap: 8%;
+      grid-row-gap: 30px;
       justify-content: center;
+      margin-left: 12px;
     }
   }
 
@@ -204,6 +266,7 @@
       display: flex;
       justify-content: space-between;
       grid-gap: 0;
+      margin-left: 0;
     }
   }
 }
@@ -211,6 +274,10 @@
 .main-form__item {
   position: relative;
   margin-bottom: 20px;
+
+  &--contacts {
+    margin-bottom: 14px;
+  }
 
   &--visitor {
     display: flex;
@@ -225,6 +292,10 @@
     margin-bottom: 10px;
   }
 
+  &--places {
+    margin-bottom: 21px;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -232,6 +303,10 @@
   @media (min-width: $tablet-width) {
     &--feedback {
       margin-bottom: 20px;
+    }
+
+    &--contacts {
+      margin-bottom: 22px;
     }
 
     &--places {
@@ -250,12 +325,16 @@
 
 .main-form__button {
   width: 100%;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-top: 47px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding-left: 5px;
     width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 16px;
   }
 }
 
@@ -345,7 +424,7 @@
   }
 
   &:checked:active::before {
-    background-color: rgba(51, 51, 51, 0.3);
+    background-color: rgba($second-black, 0.3);
     border-color: $radio-active;
   }
 }
@@ -382,7 +461,7 @@
   }
 
   &:active::before {
-    background-color: rgba(51, 51, 51, 0.3);
+    background-color: rgba($border-grey, 0.3);
   }
 
   &:checked + .main-form__checkbox-icon {
@@ -391,7 +470,7 @@
 
   &:checked:active + .main-form__checkbox-icon {
     display: block;
-    fill: rgba(51, 51, 51, 0.3);
+    fill: rgba($second-black, 0.3);
   }
 
   &:checked::before {

@@ -1,20 +1,32 @@
 .background-inner {
   min-height: 158px;
   background-position: bottom;
-  background-size: auto;
+  background-size: 240%;
 
   @media (min-width: $tablet-width) {
     min-height: 290px;
     background-size: cover;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 300px;
+  }
 }
 
 .background-inner__image {
   width: 229px;
-  height: 39px;
+  height: 40px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    width: 457px;
-    height: 78px;
+    width: 462px;
+    height: 82px;
+    margin-bottom: 24px;
+    margin-left: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+    margin-left: 0;
   }
 }

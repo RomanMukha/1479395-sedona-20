@@ -1,12 +1,16 @@
 .features__header {
   position: relative;
-  padding: 32px 20px 11px;
+  padding: 32px 25px 11px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 20px 52px;
+    padding: 43px 25px 52px;
     margin: 0 auto;
-    width: 485px;
+    width: 550px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 54px 25px 42px;
   }
 
   @media (max-width: $mobile-width) {
@@ -26,11 +30,11 @@
 }
 
 .features__title {
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
-    margin: 0 auto 26px;
+    margin: 0 auto 30px;
   }
 }
 

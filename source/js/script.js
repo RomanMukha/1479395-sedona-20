@@ -7,6 +7,8 @@
   const popupFailureClose = document.querySelector(".popup-failure__button");
   const popupSuccessClose = document.querySelector(".popup-success__button");
 
+  menuButton.classList.remove("nav__button--nojs");
+
   function recursiveQueue(elem, collection) {
     if (elem.children && elem.children.length) {
       for (child of elem.children) {
