@@ -1,6 +1,6 @@
 .features-secondary {
   border-bottom: $second-grey 1px solid;
-  padding: 26px 6px 24px;
+  padding: 26px 15px 25px;
   text-align: center;
 
   &:last-child {
@@ -9,16 +9,42 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    padding: 26px 40px;
+    padding: 42px 54px 40px;
+
+    &--place {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 42px 58px 60px;
+
+    &--road {
+      padding-left: 65px;
+      padding-right: 65px;
+    }
+  }
+}
+
+.features-secondary__title {
+  @media (min-width: $tablet-width) {
+    width: 125px;
+    margin: 0 auto;
+    font-size: 21px;
   }
 }
 
 .features-secondary__number {
-  margin-top: 15px;
+  margin-top: 12px;
   margin-bottom: 15px;
 
   &::before,
   &::after {
     content: "—";
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
   }
 }

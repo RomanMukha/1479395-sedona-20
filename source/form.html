@@ -12,7 +12,7 @@
     <div class="page__wrap">
       <header class="page-header">
         <nav class="nav nav--opened">
-          <button class="nav__button">
+          <button class="nav__button nav__button--nojs">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="nav__list site-list">
@@ -41,7 +41,7 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-              <img class="logo-nav__icon" src="img/logo-sedona-mobile.svg" width="102px" height="84px" alt="City of Sedona">
+              <img class="logo-nav__icon" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="City of Sedona">
             </picture>
           </a>
         </nav>
@@ -61,7 +61,7 @@
               <ul class="main-form__list">
                 <li class="main-form__item main-form__item--visitor">
                   <label for="input-name" class="main-form__label main-form__label--visitor main-description">Имя*:</label>
-                  <input type="text" class="main-form__field form-text" id="input-name" name="name" placeholder="Петр"required>
+                  <input type="text" class="main-form__field form-text" id="input-name" name="name" placeholder="Петр" required>
                 </li>
                 <li class="main-form__item main-form__item--visitor">
                   <label for="input-surname" class="main-form__label main-form__label--visitor main-description">Фамилия*:</label>
@@ -74,7 +74,7 @@
               </ul>
             </fieldset>
             <fieldset class="main-form__block main-form__block--contacts">
-              <legend class="main-form__title main-form__title--borders main-form__title--contacts main-title">Контактная информация:</legend>
+              <legend class="main-form__title main-form__title--borders main-form__title--contacts main-title"><span class="main-form__borders">Контактная информация:</span></legend>
               <ul class="main-form__list main-form__list--contacts">
                 <li class="main-form__item main-form__item--contacts">
                   <label for="input-tel" class="main-form__label main-form__label--contacts main-description"><span class="main-form__tel-part">Контактный </span>Телефон*:</label>
@@ -108,32 +108,32 @@
               </ul>
             </fieldset>
             <fieldset class="main-form__block main-form__block--places">
-              <legend class="main-form__title main-form__title--borders main-title">Посещенные<br> достопримечательности:</legend>
+              <legend class="main-form__title main-form__title--borders main-form__title--places main-title"><span class="main-form__borders">Посещенные<br> достопримечательности:</span></legend>
               <ul class="main-form__list main-form__list--places">
                 <li class="main-form__item main-form__item--places">
                   <input type="checkbox" class="main-form__checkbox-input" id="places-bridge" name="visited-places" value="devil-bridge" checked>
-                  <svg class="main-form__checkbox-icon" width="23px" height="17px">
+                  <svg class="main-form__checkbox-icon" width="23" height="17">
                     <use xlink:href="img/sprite.svg#icon-tick"></use>
                   </svg>
                   <label for="places-bridge" class="main-form__label main-form__label--checkbox form-text">Мост Дьявола</label>
                 </li>
                 <li class="main-form__item main-form__item--places">
                   <input type="checkbox" class="main-form__checkbox-input" id="places-mountainbell" name="visited-places" value="mountain-bell" checked>
-                  <svg class="main-form__checkbox-icon" width="23px" height="17px">
+                  <svg class="main-form__checkbox-icon" width="23" height="17">
                     <use xlink:href="img/sprite.svg#icon-tick"></use>
                   </svg>
                   <label for="places-mountainbell" class="main-form__label main-form__label--checkbox form-text">Гора-Колокол</label>
                 </li>
                 <li class="main-form__item main-form__item--places">
                   <input type="checkbox" class="main-form__checkbox-input" id="places-park" name="visited-places" value="slide-park" checked>
-                  <svg class="main-form__checkbox-icon" width="23px" height="17px">
+                  <svg class="main-form__checkbox-icon" width="23" height="17">
                     <use xlink:href="img/sprite.svg#icon-tick"></use>
                   </svg>
                   <label for="places-park" class="main-form__label main-form__label--checkbox form-text">Слайд-парк</label>
                 </li>
                 <li class="main-form__item main-form__item--places">
                   <input type="checkbox" class="main-form__checkbox-input" id="places-redrocks" name="visited-places" value="red-rocks">
-                  <svg class="main-form__checkbox-icon" width="23px" height="17px">
+                  <svg class="main-form__checkbox-icon" width="23" height="17">
                     <use xlink:href="img/sprite.svg#icon-tick"></use>
                   </svg>
                   <label for="places-redrocks" class="main-form__label main-form__label--checkbox form-text">Красные скалы</label>
@@ -142,7 +142,7 @@
             </fieldset>
             <div class="main-form__block main-form__block--emotion">
               <div class="main-form__wrap">
-                <label class="main-form__title main-form__title--borders main-title">Опишите свои эмоции:</label>
+                <label class="main-form__title main-form__title--borders main-form__title--emotion main-title"><span class="main-form__borders main-form__borders--emotion">Опишите свои эмоции:</span></label>
                 <textarea class="main-form__field main-form__field--textarea form-text" name="emotion-text" id="emotion-text" cols="30" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
               </div>
             </div>
@@ -160,7 +160,7 @@
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">
                 <span class="visually-hidden">Мы в twitter!</span>
-                <svg class="social__icon social__icon--twitter" width="18px" height="15px">
+                <svg class="social__icon social__icon--twitter" width="18" height="15">
                   <use xlink:href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
@@ -168,7 +168,7 @@
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Мы в facebook!</span>
-                <svg class="social__icon social__icon--facebook" width="9px" height="19px">
+                <svg class="social__icon social__icon--facebook" width="9" height="19">
                   <use xlink:href="img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
@@ -176,7 +176,7 @@
             <li class="social__item">
               <a class="social__link social__link--youtube" href="#">
                 <span class="visually-hidden">Мы на youtube!</span>
-                <svg class="social__icon social__icon--youtube" width="20px" height="14px">
+                <svg class="social__icon social__icon--youtube" width="20" height="14">
                   <use xlink:href="img/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>
@@ -187,7 +187,7 @@
           <p class="copyright__text">Разработано</p>
           <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
             <span class="visually-hidden">HTML-Academy</span>
-            <svg class="copyright__icon" width="27px" height="34px">
+            <svg class="copyright__icon" width="27" height="34">
               <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
             </svg>
           </a>
