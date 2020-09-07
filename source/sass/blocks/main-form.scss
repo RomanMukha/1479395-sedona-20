@@ -248,7 +248,7 @@
 }
 
 .main-form__radio-input {
-  &:checked + .main-form__label--radio::before{
+  &:checked + .main-form__label--radio::before {
     background-color: $second-black;
     border: 18px solid $third-grey;
   }
