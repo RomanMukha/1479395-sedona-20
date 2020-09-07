@@ -53,7 +53,7 @@
       grid-column: 2/2;
       grid-row: 1/1;
       border-left: $six-grey 1px solid;
-      padding-left: 18%;
+      padding-left: 17%;
     }
 
     &--contacts {
@@ -147,6 +147,12 @@
     &--feedback {
       text-align: left;
       padding-top: 10px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &--visitor {
+      margin-left: 3px;
     }
 
     &--contacts {
@@ -184,9 +190,52 @@
     margin-bottom: 8px;
   }
 
-  &--radio,
+  &--radio {
+    margin-left: 75px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -75px;
+      top: -17px;
+      width: 56px;
+      height: 56px;
+      border: 28px solid $third-grey;
+      border-radius: 50%;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      border-color: $border-grey;
+    }
+
+    &:active::before {
+      border-color: $radio-active;
+    }
+  }
+
   &--checkbox {
-    margin-left: 69px;
+    margin-left: 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -80px;
+      top: -17px;
+      width: 56px;
+      height: 56px;
+      background-color: $third-grey;
+      border-radius: 5px;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      background-color: $border-grey;
+    }
+
+    &:active::before {
+      background-color: $radio-active;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -195,6 +244,35 @@
       margin-bottom: 0;
       margin-right: 17px;
     }
+  }
+}
+
+.main-form__radio-input {
+  &:checked + .main-form__label--radio::before {
+    background-color: $second-black;
+    border: 18px solid $third-grey;
+  }
+
+  &:checked + .main-form__label--radio:hover::before,
+  &:checked + .main-form__label--radio:focus::before {
+    border-color: $border-grey;
+  }
+
+  &:checked + .main-form__label--radio:active::before {
+    background-color: rgba($second-black, 0.3);
+    border-color: $radio-active;
+  }
+}
+
+.main-form__checkbox-input {
+  &:checked + .main-form__checkbox-icon {
+    display: block;
+    fill: $second-black;
+  }
+
+  &:checked:active + .main-form__checkbox-icon {
+    display: block;
+    fill: rgba($second-black, 0.3);
   }
 }
 
@@ -380,55 +458,6 @@
   }
 }
 
-.main-form__radio-input {
-  position: relative;
-  margin: 0;
-  padding-left: 5px;
-  appearance: none;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -34px;
-    width: 56px;
-    height: 56px;
-    border: 28px solid $third-grey;
-    border-radius: 50%;
-  }
-
-  &:hover::before,
-  &:focus::before {
-    border-color: $border-grey;
-  }
-
-  &:active::before {
-    border-color: $radio-active;
-  }
-
-  &:checked::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -34px;
-    width: 56px;
-    height: 56px;
-    background-color: $second-black;
-    border: 18px solid $third-grey;
-    border-radius: 50%;
-  }
-
-  &:checked:hover::before,
-  &:checked:focus::before {
-    border-color: $border-grey;
-  }
-
-  &:checked:active::before {
-    background-color: rgba($second-black, 0.3);
-    border-color: $radio-active;
-  }
-}
-
 .main-form__checkbox-icon {
   position: absolute;
   left: 17px;
@@ -436,60 +465,5 @@
   display: none;
   pointer-events: none;
   fill: $second-black;
-}
-
-.main-form__checkbox-input {
-  position: relative;
-  margin: 0;
-  padding-left: 5px;
-  appearance: none;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -34px;
-    width: 56px;
-    height: 56px;
-    background-color: $third-grey;
-    border-radius: 5px;
-  }
-
-  &:hover::before,
-  &:focus::before {
-    background-color: $border-grey;
-  }
-
-  &:active::before {
-    background-color: rgba($border-grey, 0.3);
-  }
-
-  &:checked + .main-form__checkbox-icon {
-    display: block;
-  }
-
-  &:checked:active + .main-form__checkbox-icon {
-    display: block;
-    fill: rgba($second-black, 0.3);
-  }
-
-  &:checked::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -34px;
-    width: 56px;
-    height: 56px;
-    background-color: $third-grey;
-    border-radius: 5px;
-  }
-
-  &:checked:hover::before,
-  &:checked:focus::before {
-    background-color: $border-grey;
-  }
-
-  &:checked:active::before {
-    background-color: $radio-active;
-  }
+  z-index: 2;
 }

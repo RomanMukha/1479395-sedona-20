@@ -8,6 +8,8 @@
   const popupSuccessClose = document.querySelector(".popup-success__button");
 
   menuButton.classList.remove("nav__button--nojs");
+  menuNav.classList.remove("nav--opened");
+  menuNav.classList.add("nav--closed");
 
   function recursiveQueue(elem, collection) {
     if (elem.children && elem.children.length) {
