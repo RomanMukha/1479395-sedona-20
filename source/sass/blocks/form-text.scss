@@ -1,4 +1,12 @@
-.form-text,
+.form-text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+  color: black;
+  opacity: 1;
+}
+
 .form-text::placeholder {
   font-weight: bold;
   font-size: 18px;
